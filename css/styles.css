@@ -19,20 +19,25 @@ font-family: Roboto, sans-serif;
 font-size: 16px;
 letter-spacing: 0.02em;
 }
+.header-nav{
+    display: flex;
+    align-items: center;
+}
 .logo:hover
 .logo:focus {
     color: var(--accent-color);
 }
 .logo {
+    margin-right: 77px;
     font-family: Raleway;
     text-decoration: none;
     color: var(--title-text-color);
     font-weight: 800;
-        font-size: 18px;
-        line-height: 1.33;
-        align-items: center;
-            letter-spacing: 0.03em;
-            text-transform: uppercase;
+    font-size: 18px;
+    line-height: 1.33;
+    align-items: center;
+    letter-spacing: 0.03em;
+    text-transform: uppercase;
 }
  span {
     color: #4D5AE5;
@@ -50,8 +55,10 @@ letter-spacing: 0.02em;
         text-transform: capitalize;
 }
 .site-nav-info {
+    display: flex;
     padding: 0px;
     margin: 0px;
+    margin-left: auto;
     color: var(--primary-text-color);
     line-height: 1.5;
     text-transform: capitalize;
@@ -78,8 +85,8 @@ letter-spacing: 0.02em;
 }
 .footer-page {
     color: #E7E9FC;
-        line-height: 1.5;
-        text-decoration: none;
+    line-height: 1.5;
+    text-decoration: none;
 }
 .button-hero {
     color: var(--white-color);
@@ -112,6 +119,7 @@ letter-spacing: 0.04em
     font-size: 36px;
     line-height: 1.1;
     text-transform: capitalize;
+    text-align: center;
 }
 .button-portfolio {
         font-weight: 600;
@@ -143,10 +151,13 @@ letter-spacing: 0.04em
     background-color: var(--accent-color);
 }
 .link {
+    display: block;
+    padding-top: 24px;
+    padding-bottom: 24px;
     text-decoration: none;
     color: var(--title-text-color);
-        font-weight: 600;
-        line-height: 1.5;
+    font-weight: 600;
+    line-height: 1.5;
 }
 .link:hover{
     color: var(--accent-color);
@@ -156,16 +167,23 @@ letter-spacing: 0.04em
 
 }
 .contact-link{
+    display: block;
+    padding-top: 24px;
+    padding-bottom: 24px;
     color: var(--primary-text-color);
-        line-height: 1.33;
+    line-height: 1.33;
 }
 .contact-link:hover{
     color:var(--accent-color);
+}
+.site-nav-info .contact-link-item + .contact-link-item{
+    margin-left: 40px;
 }
 .text {
     color: #F4F4FD;
 }
 ul {
+    display: flex;
     padding: 0px;
     margin: 0px;
     list-style: none;
@@ -183,25 +201,32 @@ ul {
 li a {
     text-decoration: none;
 }
+.benefits{
+    display: flex;
+}
+.benefits li{
+    margin-left: 24px;
+}
 .benefits-text{
-        line-height: 1.33;
+    line-height: 1.33;
 }
 .team-position{
-        line-height: 1.33;
+    line-height: 1.33;
 }
 .project-type {
     color: var(--primary-text-color);
-        line-height: 1.33;
+    line-height: 1.33;
 }
 .benefits-title{
     color: var(--title-text-color);
-        font-weight: 600;
-        font-size: 36px;
-        line-height: 1.1;
+    font-weight: 600;
+    font-size: 36px;
+    line-height: 1.1;
+    text-align: center;
 }
 .section-subtitle{
     color: var(--title-text-color);
-font-weight: 600;
+    font-weight: 600;
     font-size: 20px;
     line-height: 1.2;
 }
@@ -210,11 +235,11 @@ font-weight: 600;
     line-height: 1.5;
 }
 .container{
-    margin-left: auto;
-    margin-right: auto;
     width: 1128px;
     padding-left: 15px;
     padding-right: 15px;
+    margin-left: auto;
+    margin-right: auto;
 }
 .team{
     background-color: #F4F4FD;
@@ -230,7 +255,30 @@ footer{
     padding-top: 100px;
     padding-bottom: 100px;
 }
+.our-projects-title{
+    text-align: center;
+}
 .our-projects{
     margin-top: 96px;
     margin-bottom: 72px;
+}
+.link-guide {
+   display: flex
+}
+.link-guide li{
+    margin-right: 40px;
+}
+.link-guide li:last-child{
+    margin-right: 0px;
+}    
+.item{
+    margin-left: 24px;
+}
+.our-projects-list{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
+.item-list{
+    margin-bottom: 48px;
 }
