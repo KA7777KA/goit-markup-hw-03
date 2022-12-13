@@ -19,6 +19,9 @@ font-family: Roboto, sans-serif;
 font-size: 16px;
 letter-spacing: 0.02em;
 }
+.header{
+    box-shadow: #2E2F42;
+}
 .header-nav{
     display: flex;
     align-items: center;
@@ -77,11 +80,14 @@ letter-spacing: 0.02em;
     color: var(--accent-color);
 }
 .hero {
+    padding: 192px 0px;
     text-align: center;
     background-color: #2E2F42;
 }
-.end {
+.footer {
     background-color: #2E2F42;
+    padding-top: 100px;
+    padding-bottom: 100px;
 }
 .footer-page {
     color: #E7E9FC;
@@ -89,6 +95,7 @@ letter-spacing: 0.02em;
     text-decoration: none;
 }
 .button-hero {
+    border: none;
     color: var(--white-color);
     background-color: #4D5AE5;
     padding: 16px 32px;
@@ -150,6 +157,18 @@ letter-spacing: 0.04em
     color:var(--white-color);
     background-color: var(--accent-color);
 }
+.visually-hidden{
+    position: absolute;
+    width: 1px;
+    height: 1px;
+    margin: -1px;
+    border: 0;
+    padding: 0;
+    white-space: nowrap;
+    clip-path: inset(100%);
+    clip: rect(0 0 0 0);
+    overflow: hidden;
+}
 .link {
     display: block;
     padding-top: 24px;
@@ -203,6 +222,7 @@ li a {
 }
 .benefits{
     display: flex;
+    gap: 24px;
 }
 .benefits li{
     margin-left: 24px;
@@ -212,6 +232,7 @@ li a {
 }
 .team-position{
     line-height: 1.33;
+    text-align: center;
 }
 .project-type {
     color: var(--primary-text-color);
@@ -229,13 +250,15 @@ li a {
     font-weight: 600;
     font-size: 20px;
     line-height: 1.2;
+    text-align: center;
 }
 .end-page{
     color: #E7E9FC;
     line-height: 1.5;
+    width: 264px;
 }
 .container{
-    width: 1128px;
+    width: 1158px;
     padding-left: 15px;
     padding-right: 15px;
     margin-left: auto;
@@ -250,10 +273,6 @@ p{
 }
 section{
     padding-bottom: 120px;
-}
-footer{
-    padding-top: 100px;
-    padding-bottom: 100px;
 }
 .our-projects-title{
     text-align: center;
@@ -281,4 +300,13 @@ footer{
 }
 .item-list{
     margin-bottom: 48px;
+}
+.section{
+    padding-top: 120px;
+    padding-bottom: 120px;
+}
+img{
+    display: block;
+    max-width: 100%;
+    height: auto;
 }
