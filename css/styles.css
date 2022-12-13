@@ -19,7 +19,7 @@ font-family: Roboto, sans-serif;
 font-size: 16px;
 letter-spacing: 0.02em;
 }
-.header-container{
+.header{
     display: flex;
     box-shadow: #2E2F42;
     width: 1158px;
@@ -246,6 +246,7 @@ li a {
 .project-type {
     color: var(--primary-text-color);
     line-height: 1.33;
+    text-align: center;
 }
 .benefits-title{
     color: var(--title-text-color);
@@ -319,4 +320,5 @@ img{
     display: block;
     max-width: 100%;
     height: auto;
+    margin-bottom: 32px;
 }
