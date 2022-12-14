@@ -12,6 +12,10 @@ html{
 *::after{
     box-sizing: inherit;
 }
+.section {
+    padding-top: 120px;
+    padding-bottom: 0px;
+}
 .body {
     color: var(--primary-text-color);
     background-color:var(--white-color);
@@ -21,15 +25,12 @@ letter-spacing: 0.02em;
 }
 .header{
     display: flex;
-    box-shadow: #2E2F42;
-    width: 1158px;
-    padding-left: 15px;
-    padding-right: 15px;
-    margin-left: auto;
-    margin-right: auto;
+    background: #FFFFFF;
+    box-shadow: 0px 2px 1px rgba(46, 47, 66, 0.08), 0px 1px 1px rgba(46, 47, 66, 0.16), 0px 1px 6px rgba(46, 47, 66, 0.08);
 }
 .header .container{
     display: flex;
+    align-items: center;
 }
 .header-nav{
     display: flex;
@@ -102,6 +103,11 @@ letter-spacing: 0.02em;
     color: #E7E9FC;
     line-height: 1.5;
     text-decoration: none;
+}
+.footer .logo{
+    display: flex;
+    margin-right: 0px;
+    margin-bottom: 16px;
 }
 .button-hero {
     border: none;
@@ -217,6 +223,9 @@ ul {
     list-style: none;
 }
 .hero-title{
+    width: 500px;
+    margin-left: auto;
+    margin-right: auto;
     margin-top: 0px;
     margin-bottom: 48px;
     color: var(--white-color);
@@ -255,13 +264,21 @@ li a {
     line-height: 1.1;
     text-align: center;
 }
-.section-subtitle{
+.section-subtitle-benefits{
     margin-top: 0px;
     color: var(--title-text-color);
     font-weight: 600;
     font-size: 20px;
     line-height: 1.2;
-    text-align: center;
+}
+.section-subtitle{
+    margin-top: 0px;
+    margin-bottom: 8px;
+        color: var(--title-text-color);
+        font-weight: 600;
+        font-size: 20px;
+        line-height: 1.2;
+        text-align: center;
 }
 .end-page{
     color: #E7E9FC;
@@ -302,7 +319,10 @@ section{
     margin-right: 0px;
 }    
 .item{
-    margin-left: 24px;
+padding-bottom: 32px;
+background: #FFFFFF;
+box-shadow: 0px 1px 6px rgba(46, 47, 66, 0.08), 0px 1px 1px rgba(46, 47, 66, 0.16), 0px 2px 1px rgba(46, 47, 66, 0.08);
+border-radius: 0px 0px 4px 4px;
 }
 .our-projects-list{
     display: flex;
@@ -312,13 +332,11 @@ section{
 .item-list{
     margin-bottom: 48px;
 }
-.section{
-    padding-top: 120px;
-    padding-bottom: 120px;
-}
 img{
     display: block;
     max-width: 100%;
     height: auto;
-    margin-bottom: 32px;
+}
+.about-list{
+    gap: 24px;
 }
