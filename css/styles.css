@@ -350,6 +350,7 @@ img{
     height: auto;
 }
 .team-list{
+    text-align: center;
     gap: 24px;
 }
 .project-description{
