@@ -98,7 +98,7 @@ letter-spacing: 0.02em;
     padding-bottom: 0px;
 }
 .portfolio{
-    margin-top: 96px;
+    padding-top: 96px;
 }
 .footer {
     background-color: #2E2F42;
@@ -259,7 +259,6 @@ li a {
 .project-type {
     color: var(--primary-text-color);
     line-height: 1.33;
-    text-align: center;
 }
 .benefits-title{
     color: var(--title-text-color);
@@ -275,14 +274,16 @@ li a {
     font-size: 20px;
     line-height: 1.2;
 }
+.team-img{
+    margin-bottom: 32px;
+}
 .section-subtitle{
     margin-top: 0px;
     margin-bottom: 8px;
-        color: var(--title-text-color);
-        font-weight: 600;
-        font-size: 20px;
-        line-height: 1.2;
-        text-align: center;
+    color: var(--title-text-color);
+    font-weight: 600;
+    font-size: 20px;
+    line-height: 1.2;
 }
 .end-page{
     color: #E7E9FC;
@@ -335,7 +336,6 @@ border-radius: 0px 0px 4px 4px;
 .our-projects-list{
     display: flex;
     flex-wrap: wrap;
-    /* justify-content: space-between; */
     row-gap: 48px;
     column-gap: 24px;
 }
@@ -348,13 +348,14 @@ img{
     display: block;
     max-width: 100%;
     height: auto;
-    margin-bottom: 32px;
 }
 .team-list{
     gap: 24px;
 }
 .project-description{
-    padding-top: 32px;
     padding-bottom: 32px;
-    margin-left: 16px;
+    padding-left: 16px;
+}
+.project-img{
+    margin-bottom: 32px;
 }
