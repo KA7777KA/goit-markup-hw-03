@@ -98,7 +98,7 @@ letter-spacing: 0.02em;
     padding-bottom: 0px;
 }
 .portfolio{
-    margin-bottom: 96px;
+    margin-top: 96px;
 }
 .footer {
     background-color: #2E2F42;
@@ -156,7 +156,7 @@ letter-spacing: 0.04em
         background-color: #F4F4FD;
         text-transform: capitalize;
         cursor: pointer;
-        padding: 8px 16px;
+        padding: 12px 24px;
         text-align: center;
         border: 1px solid #E7E9FC;
         border-radius: 4px;
@@ -164,16 +164,10 @@ letter-spacing: 0.04em
 }
 .button-portfolio:hover,
 .button-portfolio:focus {
-    font-weight: 600;
-        line-height: 1.5;
-        color: #FFFFFF;
-        background-color: #4D5AE5;
-        text-transform: capitalize;
-        cursor: pointer;
-        padding: 8px 16px;
-        text-align: center;
-        box-shadow: 0px 3px 1px rgba(0, 0, 0, 0.1), 0px 2px 1px rgba(0, 0, 0, 0.08), 0px 2px 2px rgba(0, 0, 0, 0.12);
-        border-radius: 4px;
+    color: #FFFFFF;
+    background-color: #4D5AE5;
+    box-shadow: 0px 3px 1px rgba(0, 0, 0, 0.1), 0px 2px 1px rgba(0, 0, 0, 0.08), 0px 2px 2px rgba(0, 0, 0, 0.12);
+    border-radius: 4px;
 }
 .button-portfolio:active {
     color:var(--white-color);
@@ -190,6 +184,9 @@ letter-spacing: 0.04em
     clip-path: inset(100%);
     clip: rect(0 0 0 0);
     overflow: hidden;
+}
+.about-list{
+    gap: 24px;
 }
 .link {
     display: block;
@@ -326,7 +323,7 @@ p{
 }    
 .team-item{
 padding-bottom: 32px;
-background: #FFFFFF;
+background: #FFFFFF;l
 box-shadow: 0px 1px 6px rgba(46, 47, 66, 0.08), 0px 1px 1px rgba(46, 47, 66, 0.16), 0px 2px 1px rgba(46, 47, 66, 0.08);
 border-radius: 0px 0px 4px 4px;
 }
@@ -338,10 +335,12 @@ border-radius: 0px 0px 4px 4px;
 .our-projects-list{
     display: flex;
     flex-wrap: wrap;
-    justify-content: space-between;
+    /* justify-content: space-between; */
+    row-gap: 48px;
+    column-gap: 24px;
 }
 .item-list{
-    margin-bottom: 48px;
+    flex-basis: calc((100% - 48px) / 3);
     border: 0.5px solid #F4F4FD;
     box-shadow: 0px 1px 6px rgba(46, 47, 66, 0.08);
 }
@@ -349,6 +348,7 @@ img{
     display: block;
     max-width: 100%;
     height: auto;
+    margin-bottom: 32px;
 }
 .team-list{
     gap: 24px;
